@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { Box, Button, List, ListItem, ListItemText, TextField, Drawer, Stack } from '@mui/material';
 import { useDocument, resetDocument, setDocument, useSamplesDrawerOpen } from '../../documents/editor/EditorContext';
-import { renderToStaticMarkup } from '@usewaypoint/email-builder';
 import { v4 as uuidv4 } from 'uuid';
 import { Delete } from '@mui/icons-material';
+import renderToStaticMarkup from '../../email-builder/renderers/renderToStaticMarkup';
 
 export const SAMPLES_DRAWER_WIDTH = 240;
 

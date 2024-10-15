@@ -1,7 +1,7 @@
 import React, { useMemo, forwardRef, useImperativeHandle } from 'react';
-import { renderToStaticMarkup } from '@usewaypoint/email-builder';
 import { useDocument } from '../../documents/editor/EditorContext';
 import HighlightedCodePanel from './helper/HighlightedCodePanel';
+import renderToStaticMarkup from '../../email-builder/renderers/renderToStaticMarkup';
 
 const HtmlPanel = forwardRef((props, ref) => {
   const document = useDocument();
