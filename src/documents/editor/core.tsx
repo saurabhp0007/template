@@ -126,8 +126,8 @@ const EDITOR_DICTIONARY = buildBlockConfigurationDictionary({
     schema: ImagePropsSchema as any,
     Component: (props: any) => (
       <EditorBlockWrapper>
-        {/* <BottomImageCarousel {...props} /> */}
-        <div>hi</div>
+        <BottomImageCarousel {...props} />
+        {/* <div>hi</div> */}
       </EditorBlockWrapper>
     ),
   },

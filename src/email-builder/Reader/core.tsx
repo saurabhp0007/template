@@ -74,6 +74,11 @@ const READER_DICTIONARY = buildBlockConfigurationDictionary({
     schema: TextPropsSchema,
     Component: Text,
   },
+  BottomImageCarousel: {
+    schema: ImagePropsSchema as any,
+    Component:Image
+  },
+  
 });
 
 export const ReaderBlockSchema = buildBlockConfigurationSchema(READER_DICTIONARY);
